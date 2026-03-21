@@ -1,6 +1,6 @@
 # Lagos Health Navigator 🚑🗺️
 
-[Live Demo](https://lagos-health-navigator-7jyx.vercel.app/)
+[Live Demo](https://lagos-health-navigator-v2.vercel.app/)
 
 ![Screenshot](healthcare.png)
 
