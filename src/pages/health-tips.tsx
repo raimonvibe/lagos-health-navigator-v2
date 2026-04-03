@@ -290,8 +290,7 @@ export default function HealthTips() {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
-            <p>&copy; 2025 Lagos Health Navigator. Built to improve healthcare access in Lagos State.</p>
-          </div>
+<p>&copy; {new Date().getFullYear()} Lagos Health Navigator. Built to improve healthcare access in Lagos State.</p>          </div>
         </div>
       </footer>
     </div>
