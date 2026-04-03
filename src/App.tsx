@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
 import HealthTips from './pages/health-tips'
-import YoungAdultHealth from './pages/YoungAdultHealth'
+import YoungAdultHealth from './pages/young-adult-health'
 import MentalHealthSupport from './pages/mental-health-support'
 import PreventiveCare from './pages/PreventiveCare'
 import './App.css'
