@@ -110,7 +110,7 @@ export default function MentalHealthSupport() {
   ]
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-slate-900' : 'bg-gradient-to-br from-purple-50 to-blue-50'}`}>
+    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-slate-900' : 'bg-linear-to-br/srgb from-purple-50 to-blue-50'}`}>
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8 flex justify-between items-start">
           <Link to="/">
@@ -179,7 +179,7 @@ export default function MentalHealthSupport() {
                 <ul className="space-y-2">
                   {service.services.map((item, itemIndex) => (
                     <li key={itemIndex} className="flex items-start">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 shrink-0" />
                       <span className="text-sm text-slate-600 dark:text-slate-400">{item}</span>
                     </li>
                   ))}
@@ -203,7 +203,7 @@ export default function MentalHealthSupport() {
                   <ul className="space-y-2">
                     {category.signs.map((sign, signIndex) => (
                       <li key={signIndex} className="flex items-start">
-                        <AlertCircle className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
+                        <AlertCircle className="h-4 w-4 text-orange-500 mr-2 mt-0.5 shrink-0" />
                         <span className="text-sm text-slate-600 dark:text-slate-400">{sign}</span>
                       </li>
                     ))}
@@ -226,7 +226,7 @@ export default function MentalHealthSupport() {
               <ul className="space-y-2">
                 {copingStrategies.map((strategy, index) => (
                   <li key={index} className="flex items-start">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 shrink-0" />
                     <span className="text-sm text-slate-600 dark:text-slate-400">{strategy}</span>
                   </li>
                 ))}

@@ -66,7 +66,7 @@ export default function HealthTips() {
   ]
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-slate-900' : 'bg-gradient-to-br from-primary-50 to-secondary-50'}`}>
+    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-slate-900' : 'bg-linear-to-br/srgb from-primary-50 to-secondary-50'}`}>
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8 flex justify-between items-start">
           <Link to="/">
@@ -111,7 +111,7 @@ export default function HealthTips() {
                 <ul className="space-y-3">
                   {category.tips.map((tip, tipIndex) => (
                     <li key={tipIndex} className="flex items-start">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 shrink-0" />
                       <span className="text-sm text-slate-600 dark:text-slate-400">{tip}</span>
                     </li>
                   ))}
@@ -135,7 +135,7 @@ export default function HealthTips() {
             <ul className="space-y-2">
               {emergencyTips.map((tip, index) => (
                 <li key={index} className="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-red-500 mr-2 mt-0.5 shrink-0" />
                   <span className="text-sm text-slate-600 dark:text-slate-400">{tip}</span>
                 </li>
               ))}
