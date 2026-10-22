@@ -73,7 +73,7 @@ function HomePage() {
   }
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-slate-900' : 'bg-gradient-to-br from-primary-50 to-secondary-50'}`}>
+    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-slate-900' : 'bg-linear-to-br/srgb from-primary-50 to-secondary-50'}`}>
       {/* Header */}
       <header className="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-primary-200 dark:border-slate-700">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -96,7 +96,7 @@ function HomePage() {
 
       {/* Hero Section */}
       <section className="relative py-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-secondary-500 opacity-10 dark:opacity-20"></div>
+        <div className="absolute inset-0 bg-linear-to-r/srgb from-primary-500 to-secondary-500 opacity-10 dark:opacity-20"></div>
         <div className="container mx-auto text-center relative z-10">
           <div className="flex justify-center mb-6 space-x-4">
             <FaStethoscope className="h-12 w-12 text-secondary animate-bounce" />
@@ -228,7 +228,7 @@ function HomePage() {
                       <FaClock className="h-4 w-4 mr-2" />
                       {facility.hours}
                     </div>
-                    <div className="flex flex-wrap gap-1 mt-3">
+                    <div className="flex flex-wrap gap-1">
                       {facility.insurance.map((ins, idx) => (
                         <Badge key={idx} variant="outline" className="text-xs">{ins}</Badge>
                       ))}
@@ -352,7 +352,7 @@ function HomePage() {
             <Link to="/health-tips" className="group">
               <Card className="hover:shadow-lg transition-all duration-300 group-hover:scale-105">
                 <CardHeader className="text-center">
-                  <div className="inline-flex items-center justify-center p-3 bg-green-100 dark:bg-green-900/30 rounded-full mb-3 mx-auto">
+                  <div className="inline-flex items-center justify-center p-3 bg-green-100 dark:bg-green-900/30 rounded-full mb-4.5 mx-auto">
                     <FaApple className="h-8 w-8 text-green-600" />
                   </div>
                   <CardTitle className="text-lg">Health Tips</CardTitle>
@@ -371,7 +371,7 @@ function HomePage() {
             <Link to="/young-adult-health" className="group">
               <Card className="hover:shadow-lg transition-all duration-300 group-hover:scale-105">
                 <CardHeader className="text-center">
-                  <div className="inline-flex items-center justify-center p-3 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-3 mx-auto">
+                  <div className="inline-flex items-center justify-center p-3 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-4.5 mx-auto">
                     <FaUsers className="h-8 w-8 text-blue-600" />
                   </div>
                   <CardTitle className="text-lg">Young Adult Health</CardTitle>
@@ -390,7 +390,7 @@ function HomePage() {
             <Link to="/mental-health-support" className="group">
               <Card className="hover:shadow-lg transition-all duration-300 group-hover:scale-105">
                 <CardHeader className="text-center">
-                  <div className="inline-flex items-center justify-center p-3 bg-purple-100 dark:bg-purple-900/30 rounded-full mb-3 mx-auto">
+                  <div className="inline-flex items-center justify-center p-3 bg-purple-100 dark:bg-purple-900/30 rounded-full mb-4.5 mx-auto">
                     <FaBrain className="h-8 w-8 text-purple-600" />
                   </div>
                   <CardTitle className="text-lg">Mental Health Support</CardTitle>
@@ -409,7 +409,7 @@ function HomePage() {
             <Link to="/preventive-care" className="group">
               <Card className="hover:shadow-lg transition-all duration-300 group-hover:scale-105">
                 <CardHeader className="text-center">
-                  <div className="inline-flex items-center justify-center p-3 bg-orange-100 dark:bg-orange-900/30 rounded-full mb-3 mx-auto">
+                  <div className="inline-flex items-center justify-center p-3 bg-orange-100 dark:bg-orange-900/30 rounded-full mb-4.5 mx-auto">
                     <FaShieldAlt className="h-8 w-8 text-orange-600" />
                   </div>
                   <CardTitle className="text-lg">Preventive Care</CardTitle>

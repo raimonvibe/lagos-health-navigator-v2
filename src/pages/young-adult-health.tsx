@@ -96,7 +96,7 @@ export default function YoungAdultHealth() {
   ]
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-slate-900' : 'bg-gradient-to-br from-secondary-50 to-accent-50'}`}>
+    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-slate-900' : 'bg-linear-to-br/srgb from-secondary-50 to-accent-50'}`}>
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8 flex justify-between items-start">
           <Link to="/">
@@ -141,7 +141,7 @@ export default function YoungAdultHealth() {
                 <ul className="space-y-2">
                   {topic.content.map((item, itemIndex) => (
                     <li key={itemIndex} className="flex items-start">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 shrink-0" />
                       <span className="text-sm text-slate-600 dark:text-slate-400">{item}</span>
                     </li>
                   ))}
@@ -165,7 +165,7 @@ export default function YoungAdultHealth() {
                   <ul className="space-y-2">
                     {item.solutions.map((solution, solutionIndex) => (
                       <li key={solutionIndex} className="flex items-start">
-                        <CheckCircle className="h-4 w-4 text-accent mr-2 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 text-accent mr-2 mt-0.5 shrink-0" />
                         <span className="text-sm text-slate-600 dark:text-slate-400">{solution}</span>
                       </li>
                     ))}
@@ -188,7 +188,7 @@ export default function YoungAdultHealth() {
               <ul className="space-y-2">
                 {preventiveCare.map((item, index) => (
                   <li key={index} className="flex items-start">
-                    <CheckCircle className="h-4 w-4 text-accent mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-accent mr-2 mt-0.5 shrink-0" />
                     <span className="text-sm text-slate-600 dark:text-slate-400">{item}</span>
                   </li>
                 ))}

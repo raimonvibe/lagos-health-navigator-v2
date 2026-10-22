@@ -150,7 +150,7 @@ export default function PreventiveCare() {
   ]
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-slate-900' : 'bg-gradient-to-br from-green-50 to-blue-50'}`}>
+    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-slate-900' : 'bg-linear-to-br/srgb from-green-50 to-blue-50'}`}>
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8 flex justify-between items-start">
           <Link to="/">
@@ -248,7 +248,7 @@ export default function PreventiveCare() {
                 <ul className="space-y-2">
                   {category.tips.map((tip, tipIndex) => (
                     <li key={tipIndex} className="flex items-start">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 shrink-0" />
                       <span className="text-sm text-slate-600 dark:text-slate-400">{tip}</span>
                     </li>
                   ))}
@@ -270,7 +270,7 @@ export default function PreventiveCare() {
               <ul className="space-y-2">
                 {earlyDetectionSigns.map((sign, index) => (
                   <li key={index} className="flex items-start">
-                    <Clock className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Clock className="h-4 w-4 text-orange-500 mr-2 mt-0.5 shrink-0" />
                     <span className="text-sm text-slate-600 dark:text-slate-400">{sign}</span>
                   </li>
                 ))}
